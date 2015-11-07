@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2015-11-05 02:46:15.774399 UTC
+2015-11-06 01:17:08.823953 UTC
 
 interface main@main:Main 7102
-  interface hash: 8c121f84889e5cde5d0d2c05f4b9b568
-  ABI hash: 5ccd693e553b96af12bd710d5626cb8d
-  export-list hash: f79463bda787d9d71acc8aa103510fc7
+  interface hash: 36855726f16e3ec9b4214e174a5a1c25
+  ABI hash: d6cc281397760260936846051010d220
+  export-list hash: de1fabc86f10665d54e35b262d7d0774
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 655257b788e1e5cc64317f6b299b39ad
   sig of: Nothing
@@ -15,20 +15,20 @@ exports:
   Main.main
 module dependencies:
 package dependencies: base-4.8.1.0* ghc-prim-0.4.0.0
-                      haskgame-0.1.0.0@haskg_2O83vaiVLS4KXlJ3nF5mMU integer-gmp-1.0.0.0
+                      haskgame-0.1.0.0@haskg_7z68SNgX2LWIoxdq4wzkOG integer-gmp-1.0.0.0
 orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
 family instance modules: base-4.8.1.0:Control.Applicative
                          base-4.8.1.0:Data.Either base-4.8.1.0:Data.Monoid
                          base-4.8.1.0:Data.Type.Equality base-4.8.1.0:GHC.Generics
 import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  haskgame-0.1.0.0@haskg_2O83vaiVLS4KXlJ3nF5mMU:Lib 504669eb711dd38556b59c08b91ca221
-4daf9dc481ab80bb48212627fc4fae88
+import  -/  haskgame-0.1.0.0@haskg_7z68SNgX2LWIoxdq4wzkOG:Lib 2783e0b27e6c6101eaa1ca0a7ee94e6c
+6b45068ce30d86c8aecb6e2c85692353
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Lib.someFunc1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-e94f6f7f38cdbdfd23afb95cc30ca967
+bf42b5ab0bd84506a693381683a6fd73
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

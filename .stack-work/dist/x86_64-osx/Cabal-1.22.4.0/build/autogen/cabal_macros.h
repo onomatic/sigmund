@@ -14,6 +14,20 @@
   (major1) == 4 && (major2) <  12 || \
   (major1) == 4 && (major2) == 12 && (minor) <= 3)
 
+/* package pipes-4.1.6 */
+#define VERSION_pipes "4.1.6"
+#define MIN_VERSION_pipes(major1,major2,minor) (\
+  (major1) <  4 || \
+  (major1) == 4 && (major2) <  1 || \
+  (major1) == 4 && (major2) == 1 && (minor) <= 6)
+
+/* package profunctors-5.1.1 */
+#define VERSION_profunctors "5.1.1"
+#define MIN_VERSION_profunctors(major1,major2,minor) (\
+  (major1) <  5 || \
+  (major1) == 5 && (major2) <  1 || \
+  (major1) == 5 && (major2) == 1 && (minor) <= 1)
+
 /* package semigroups-0.16.2.2 */
 #define VERSION_semigroups "0.16.2.2"
 #define MIN_VERSION_semigroups(major1,major2,minor) (\
@@ -70,5 +84,5 @@
   (major1) == 0 && (major2) <  67 || \
   (major1) == 0 && (major2) == 67 && (minor) <= 0)
 
-#define CURRENT_PACKAGE_KEY "haskg_2O83vaiVLS4KXlJ3nF5mMU"
+#define CURRENT_PACKAGE_KEY "haskg_7z68SNgX2LWIoxdq4wzkOG"
 

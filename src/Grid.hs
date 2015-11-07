@@ -1,9 +1,31 @@
-{-# LANGUAGE TemplateHaskell, ViewPatterns #-}
+{-# LANGUAGE TemplateHaskell, ViewPatterns, MultiParamTypeClasses, TypeFamilies #-}
 
 import Control.Lens
-import Control.Monad.State
+import qualified Data.Indexed as I
 import qualified Data.Vector as V
+import Data.Vector ((!))
+import qualified Data.Coordinates as C
 
+class (C.Coord co) => Grid grid co where
+
+	type Elem grid :: *
+
+
+	translate :: co -> (grid -> I.Indexed co (Elem grid))
+
+	coords :: grid -> [co]
+
+
+
+instance Grid (V.Vector v) (C.Point) where
+    type Elem (V.Vector v) = v
+
+    coords = undefined
+
+    translate c = I.index' f c
+             where f v (C.unP -> (x,y))  = v ! (x * 10 + y)   
+
+{- 
 data Terrain = Mud | Grass | Water | Fire  
 
 data Player = Player
@@ -17,4 +39,5 @@ makeLenses ''Grid
 data Game = Game {_players :: [Player], _world :: Grid Terrain}
 
 updateTerrain :: Grid Terrain -> Grid Terrain
-updateTerrain g@(view cur -> Grass) = g & cur .~  Mud   
+updateTerrain g@(view cur -> Grass) = g & cur .~  Mud 
+-}  
